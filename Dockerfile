@@ -14,6 +14,6 @@ RUN mvn --batch-mode package
 
 FROM openjdk:8-jre-alpine
 
-COPY --from=build /code/target/spring-echo-example-SNAPSHOT.jar /echo-jar-with-dependencies.jar
+COPY --from=build /code/target/spring-echo-example.jar /echo-jar-with-dependencies.jar
 
 CMD ["java", "-XX:+UnlockExperimentalVMOptions", "-XX:+UseCGroupMemoryLimitForHeap", "-jar", "/echo-jar-with-dependencies.jar"]
