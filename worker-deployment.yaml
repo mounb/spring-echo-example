@@ -15,5 +15,5 @@ spec:
         app: echo-example
     spec:
       containers:
-      - image: dockersamples/echo-example
+      - image: jiyu-evo/java8
         name: echo-example-e2e
