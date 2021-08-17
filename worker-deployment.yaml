@@ -15,5 +15,5 @@ spec:
         app: echo-example
     spec:
       containers:
-      - image: jiyu-evo/java8
+      - image: fabletang/jre8-alpine
         name: echo-example-e2e
